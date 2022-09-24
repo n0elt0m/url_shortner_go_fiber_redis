@@ -14,6 +14,8 @@ func setupRoutes(app *fiber.App) {
 	app.Post("/api/v1", routes.ShortenURL)
 }
 
+//
+
 func main() {
 	err := godotenv.Load()
 	if err != nil {
