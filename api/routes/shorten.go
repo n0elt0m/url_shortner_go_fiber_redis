@@ -88,7 +88,6 @@ func ShortenURL(c *fiber.Ctx) error {
 		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"error": "unable to connect to DB"})
 		//return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"error": err})
 	}
-	//
 
 	resp := response{
 		URL:             body.URL,
